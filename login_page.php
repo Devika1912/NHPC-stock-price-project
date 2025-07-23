@@ -20,7 +20,7 @@
         $count = mysqli_num_rows($result);  
         
         if($count == 1){  
-            header("Location: stock1.html");
+            header("Location: index.html");
         }  
         else{  
             echo  '<script>
