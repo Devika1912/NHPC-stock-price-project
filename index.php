@@ -20,11 +20,11 @@
         $count = mysqli_num_rows($result);  
         
         if($count == 1){  
-            header("Location: index.html");
+            header("Location: stock1.html");
         }  
         else{  
             echo  '<script>
-                        window.location.href = "login_page.php";
+                        window.location.href = "index.php";
                         alert("Login failed. Invalid username or password!!")
                     </script>';
         }     
@@ -70,7 +70,7 @@
     <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <div class="container">
-        <form name="form" action="login_page.php" onsubmit="return isvalid()" method="POST">
+        <form name="form" action="index.php" onsubmit="return isvalid()" method="POST">
             <h4 class="text-center">Login</h4>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Username</label>
